@@ -5,8 +5,13 @@ package com.yh;
  * @author jingyuanhang
  * @date 2017/10/16
  *
+ * 设置运行时：VM Options参数
+ * 做逃逸分析       不做在栈上分配   使用本地缓存    打印GC
  * -XX:+DoEscapeAnalysis -XX:+EliminateAllocations -XX:+UseTLAB -XX:+PrintGC
- * 关闭逃逸分析   关闭标量替换    关闭线程本地内存   打印GC信息
+ *
+ * 减号代表关闭。关闭逃逸分析   关闭标量替换    关闭线程本地内存   打印GC信息
+ * -XX:-DoEscapeAnalysis -XX:-EliminateAllocations -XX:-UseTLAB -XX:+PrintGC
+ *
  */
 public class T01 {
 
